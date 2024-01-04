@@ -1,0 +1,13 @@
+{
+    "template": "zamestnanci.html.twig",
+    "vars": {
+        "Data": [
+            {"index": 1, "Jmeno": "David", "Prijmeni": "Tomášek", "Pozice":"Prodavač", "Telefon": 789456123},
+            {"index": 2, "Jmeno": "Tomáš", "Prijmeni": "Šustr", "Pozice":"Brigádník", "Telefon": 159357468},
+            {"index": 3,"Jmeno": "Jakub", "Prijmeni": "Nákup", "Pozice":"Brigádník", "Telefon": 167489325},
+            {"index": 4, "Jmeno": "Martin", "Prijmeni": "Studmy", "Pozice":"Řidič", "Telefon": 145698723},
+            {"index": 5, "Jmeno": "Marek", "Prijmeni": "Sterzik", "Pozice":"Opravář", "Telefon": 201345687},
+            {"index": 6, "Jmeno": "Lukáš", "Prijmeni": "Puk", "Pozice":"Řidič", "Telefon": 987302568}
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "template": "upravitZamestnance.html.twig",
+    "vars": {
+        "Data": [
+            {"index": 1, "Jmeno": "David", "Prijmeni": "Tomášek"},
+            {"index": 2, "Jmeno": "Tomáš", "Prijmeni": "Šustr"},
+            {"index": 3,"Jmeno": "Jakub", "Prijmeni": "Nákup"},
+            {"index": 4, "Jmeno": "Martin", "Prijmeni": "Studmy"},
+            {"index": 5, "Jmeno": "Marek", "Prijmeni": "Sterzik"},
+            {"index": 6, "Jmeno": "Lukáš", "Prijmeni": "Puk"}
+        ]
+    }
+}

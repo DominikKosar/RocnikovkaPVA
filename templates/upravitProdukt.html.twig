@@ -1,0 +1,32 @@
+{% extends "novyProdukt.html.twig" %}
+{% block tlacitkoZpet %}
+    <div class="container">
+        <a href="produkty">Zpět</a>
+    </div>
+{% endblock %}
+{% block nadpisForm %}
+    Upravit produkt
+{% endblock %}
+{% block contentForm %}
+        {% block select %}
+        <p class="text-center m-2">
+            Produkty:
+            <select class="select text-start">
+                {% for i in Data %}
+                    <option value="data">{{ i.Nazev }}</option>
+                {% endfor %}
+            </select>
+        </p>
+        {% endblock %}
+    <div class="container text-center">
+        {% block input %}
+            <form>
+                <input type="text" placeholder="Název produktu" class="m-1"><br>
+                <input type="text" placeholder="Popis produktu" class="m-1"><br>
+                <input type="text" placeholder="Cena" class="m-1"><br>
+                <input type="file" placeholder="Obr" class="m-2 text-center"><br>
+                <button class="px-2 m-2 tlacitko" type="submit" value="white" name="submit">Upravit vybraný produkt</button>
+            </form>
+        {% endblock %}
+    </div>
+{% endblock %}

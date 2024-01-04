@@ -1,0 +1,28 @@
+{% extends "novyZamestnanec.html.twig" %}
+{% block tlacitkoZpet %}
+    <div class="container">
+        <a href="zamestnanci">Zpět</a>
+    </div>
+{% endblock %}
+{% block nadpisForm %}
+    Upravit Zaměstnance
+{% endblock %}
+{% block contentForm %}
+        <p class="text-center m-2">
+            Zaměstnanci:
+            <select class="select text-start">
+                {% for i in Data %}
+                    <option value="data">{{ i.index }}.{{ i.Jmeno }} {{ i.Prijmeni }}</option>
+                {% endfor %}
+            </select>
+        </p>
+        <div class="container text-center">
+            <form class="text-center">
+                <input type="text" placeholder="Jméno" class="m-1"><br>
+                <input type="text" placeholder="Příjmení" class="m-1"><br>
+                <input type="text" placeholder="Pozice" class="m-1"><br>
+                <input type="tel" placeholder="Telefon" class="m-2"><br>
+                <button class="px-2 m-2 tlacitko" type="submit" value="white" name="submit">Upravit vybraného Zaměstnance</button>
+            </form>
+        </div>
+{% endblock %}

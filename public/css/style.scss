@@ -1,0 +1,96 @@
+@import "colors/colors"; 
+@import "mixins/mixins";
+@import "variables/variables";
+body{
+    background-color: $color55;
+}
+div.hlavni{
+    background-color: $color23;
+    border-style: ridge;
+    border-color: black; 
+    border-width: .25em;
+    margin-bottom: 5em;  
+}
+ul{
+    @include seznam;
+}
+a{
+    @include odkazy;
+}
+button.tlacitko{
+    @include tlacitko;
+}
+div.data{
+    @include navDataLI;
+}
+div.karty{
+    @include karty;
+}
+div.seznamKaret{
+    @include seznamKaret;
+    background-color: $color23;
+    border-style: ridge;
+    border-color: black; 
+    border-width: .25em;
+}
+
+div.vedlejsi{
+    background-color: $color23;
+    border-style: ridge;
+    border-color: black; 
+    border-width: .25em;
+}
+
+div.formular{
+    background-color: $color23;
+    border-style: ridge;
+    border-color: black; 
+    border-width: .25em;
+    max-width: 30em;
+}
+
+@media (max-width: 1381px){
+    div.ramecek{
+        margin-left: 5em;
+    }
+}
+
+@media (max-width: 990px){
+    div.ramecek{
+        margin-left: 3em;
+    }
+    div.ved{
+        justify-content: left;
+    }
+}
+@media (max-width: 600px){
+    div.ramecek{
+        margin-left: 2.75em;
+    }
+}
+@media (max-width: 550px){
+    div.ramecek{
+        margin-left: 2em;
+    }
+}
+@media (max-width: 478px){
+    div.ramecek{
+        margin-left: 1em;
+    }
+}
+@media (max-width: 460px){
+    div.ramecek{
+        margin-left: 5.5em;
+    }
+}
+@media (max-width: 440px){
+    div.radka{
+        justify-content: center;
+    }
+    div.ramecek{
+        margin-left: 0em;
+    }
+    div.tlacit{
+        margin-right: 1em;
+    }
+}

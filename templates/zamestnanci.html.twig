@@ -1,0 +1,47 @@
+{% extends "slevy.html.twig" %}
+{% block body %}
+    <nav class="navbar justify-content-end">
+        <form class="px-4 ">
+            <a href="novyZamestnanec">Nový zaměstnanec</a>
+        </form>
+    </nav>
+    <nav class="navbar justify-content-end">
+        <form class="px-4">
+            <a href="upravitZamestnance">Upravit Zaměstnance</a>
+        </form>
+    </nav>
+    <nav class="navbar justify-content-end">
+        <form class="px-4">
+            <button class="px-2 m-2" type="submit" value="white" name="submit">Smazat Zaměstnance</button>
+        </form>
+    </nav>
+    <div class="tabulka p-2">
+        <table class="table table-striped">
+        <thead class="table-info">
+            <td></td>
+            <td>Jméno</td>
+            <td>Příjmení</td>
+            <td>Pozice</td>
+            <td>Telefon</td>
+            <td></td>
+        <thead>
+        <tbody class="table-dark">
+            {% for i in Data %}
+            <tr>
+                <td>{{ i.index }}.</td>
+                <td>{{ i.Jmeno }}</td>
+                <td>{{ i.Prijmeni }}</td>
+                <td>{{ i.Pozice }}</td>
+                <td>{{ i.Telefon }}</td>
+                <td>
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+        
+    </table>
+    </div>
+
+
+{% endblock %}

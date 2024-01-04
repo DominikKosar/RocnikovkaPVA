@@ -1,0 +1,17 @@
+{   
+    "extends": "",
+    "template": "index.html.twig",
+    "vars":{
+        "nazev": ["", "", "", "", ""],
+        "popisek": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "obrazek": ["adresy ze složky SVG"],
+        "cena": [15000, 10000, 500, 2500, 1000]
+    }
+
+}

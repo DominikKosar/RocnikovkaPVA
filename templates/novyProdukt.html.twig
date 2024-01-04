@@ -1,0 +1,28 @@
+{% extends "slevy.html.twig" %}
+{% block body %}
+    {% block tlacitkoZpet %}
+        <div class="container">
+            <a href="produkty">Zpět</a>
+        </div>
+    {% endblock %}
+    <div class="container nadpis">
+        <div class="container text-center">
+            {% block nadpisForm %}
+                Nový produkt
+            {% endblock %}
+        </div>
+        <div class="container formular">
+            <form class="form">
+                {% block contentForm %}
+                    <div class="container text-center">
+                        <input type="text" placeholder="Název produktu" class="m-1"><br>
+                        <input type="text" placeholder="Popis produktu" class="m-1"><br>
+                        <input type="text" placeholder="Cena" class="m-1"><br>
+                        <input type="file" placeholder="Obr" class="m-2 text-center"><br>
+                        <button class="px-2 m-2 tlacitko" type="submit" value="white" name="submit">Přidat nový produkt</button>
+                    </div>
+                {% endblock %}
+            </form>
+        </div>
+    </div>    
+{% endblock %}

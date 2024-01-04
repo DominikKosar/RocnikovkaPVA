@@ -1,0 +1,29 @@
+{% extends "slevy.html.twig" %}
+{% block body %}
+    {% block tlacitkoZpet %}
+        <div class="container">
+            <a href="zamestnanci">Zpět</a>
+        </div>
+    {% endblock %}
+    <div class="container nadpis">
+        <div class="container text-center">
+            {% block nadpisForm %}
+                Nový zaměstnanec
+            {% endblock %}
+        </div>
+        <div class="container formular">
+            <form class="form">
+                {% block contentForm %}
+                    <div class="container text-center">
+                        <input type="text" placeholder="Jméno" class="m-1"><br>
+                        <input type="text" placeholder="Příjmení" class="m-1"><br>
+                        <input type="text" placeholder="Pozice" class="m-1"><br>
+                        <input type="tel" placeholder="Telefon" class="m-1"><br>
+                        <button class="px-2 m-2 tlacitko" type="submit" value="white" name="submit">Přidat nového Zaměstnance</button>
+                    </div>
+                {% endblock %}
+            </form>
+        </div>
+    </div>    
+
+{% endblock %}
