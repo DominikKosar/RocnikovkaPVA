@@ -12,18 +12,18 @@
     <body>
     <script src="{{ asset('js/produkty.js') }}" type="text/javascript"></script>
         <div class="container position-absolute top-50 start-50 translate-middle">
-            <div class="container text-center nadpis">
-                {% block nadpisForm %}
-                    Login
-                {% endblock %}
-            </div>
             <div class="container formular">
+                <div class="container text-center nadpis">
+                    {% block nadpisForm %}
+                        Login
+                    {% endblock %}
+                </div>
                 <form class="form">
                     {% block contentForm %}
                         <div class="container text-center">
                             <input type="text" placeholder="Username" class="m-1"><br>
                             <input type="password" placeholder="Password" class="m-1"><br>
-                            <button class="px-2 m-2 tlacitko" type="submit" value="white" name="submit"><a href="slevy">Přihlásit</a></button>
+                            <a href="slevy"><input class="px-2 m-2" type="button" name="submit" value="Přihlásit se"></a>
                         </div>
                     {% endblock %}
                 </form>

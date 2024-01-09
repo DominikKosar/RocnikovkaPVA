@@ -25,7 +25,41 @@
             </nav>
         </div>
         {% block body %}
-            
+            {% block nadpis %}
+            {% endblock %}
+            {% block contentForm %}
+            {% endblock %}
+            <div class="container vedlejsi">
+                <nav class="navbar justify-content-end">
+                    <form class="px-4">
+                        <a href="novaSleva">Nová sleva</a>
+                    </form>
+                </nav>
+                <nav class="navbar justify-content-end">
+                    <form class="px-4">
+                        <input class="px-2 mb-3" type="submit" name="submit" value="Smazat slevu">
+                    </form>
+                </nav>
+            </div>
+        
+        <div class="container card-group seznamKaret">
+            <div class="ramecek">
+                <div class="row mx-4 p-1 align-item-center radka">
+                {% for i in Data %}
+                    <div class="card p-1 m-2 karty">
+                        <img src="{{ asset(i.Obrazek) }}" class="card-img-top p-2">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ i.Nazev }}</h5>
+                            <p class="card-text">{{ i.Text }}</p>
+                            <p class="card-text">{{ i.Cena }}Kč <input class="form-check-input ms-4" type="checkbox" role="switch" id="flexSwitchCheckDefault"></p>
+                            
+                        </div>
+                        
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
         {% endblock %}
     </body>
 </html>

@@ -2,10 +2,10 @@
 @import "mixins/mixins";
 @import "variables/variables";
 body{
-    background-color: $color55;
+    background-color: $colorModra;
 }
 div.hlavni{
-    background-color: $color23;
+    background-color: $colorSediva;
     border-style: ridge;
     border-color: black; 
     border-width: .25em;
@@ -28,25 +28,46 @@ div.karty{
 }
 div.seznamKaret{
     @include seznamKaret;
-    background-color: $color23;
+    background-color: $colorFialova;
     border-style: ridge;
     border-color: black; 
     border-width: .25em;
 }
 
 div.vedlejsi{
-    background-color: $color23;
+    background-color: $colorFialova;
     border-style: ridge;
     border-color: black; 
     border-width: .25em;
 }
 
 div.formular{
-    background-color: $color23;
+    background-color: $colorFialova;
     border-style: ridge;
     border-color: black; 
     border-width: .25em;
     max-width: 30em;
+}
+div.nadpis{
+    color: white;
+}
+input{
+    padding: .25em;
+    border-radius: .35em;
+    border-color: black;
+    border: .25em;
+    border-style:solid;
+}
+select{
+    padding: .25em;
+    border-radius: .35em;
+    border-color: black;
+    border: .25em;
+    border-style:solid;
+}
+.nadpis{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
 }
 
 @media (max-width: 1381px){

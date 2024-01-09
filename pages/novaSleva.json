@@ -1,6 +1,6 @@
 {
-    "template": "slevy.html.twig",
-    "vars": {
+    "template": "novaSleva.html.twig",
+    "vars":{
         "Data":[
             {
                 "Nazev": "PS5",
@@ -72,9 +72,6 @@
                 "Cena": 15000
                 
             }
-            
-           
         ]
-        
     }
 }

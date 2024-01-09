@@ -1,0 +1,30 @@
+{% extends "slevy.html.twig" %}
+{% block body %}
+    
+        <div class="container nadpis">
+            <div class="container formular">
+                    <a href="slevy">Zpět</a>
+                {% block nadpis %}
+                    <div class="container text-center nadpis mb-3">
+                        Nová sleva
+                    </div>
+                {% endblock %}
+                {% block contentForm %}
+                    <p class="text-center m-1">
+                        Produkty:
+                        <select class="select text-start">
+                            {% for i in Data %}
+                                <option value="data">{{ i.Nazev }}</option>
+                            {% endfor %}
+                        </select>
+                    </p>
+                    <form class="text-center">
+                        <p class="me-2">Sleva: <input type="number" placeholder="Sleva" min="5" max="99"> %</p><br>
+                        <input class="px-2 mb-3" type="submit" name="submit" value="Přidat novou slevu">
+                {% endblock %}
+            </div>
+        </div>
+
+    
+
+{% endblock %}
