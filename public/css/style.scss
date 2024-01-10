@@ -4,7 +4,7 @@
 body{
     background-color: $colorModra;
 }
-div.hlavni{
+div.hlavniNavbar{
     background-color: $colorSediva;
     border-style: ridge;
     border-color: black; 
@@ -17,24 +17,20 @@ ul{
 a{
     @include odkazy;
 }
-button.tlacitko{
-    @include tlacitko;
-}
-div.data{
+div.navDataLi{
     @include navDataLI;
 }
-div.karty{
-    @include karty;
+div.kartaProdukty{
+    @include kartyProdukty;
+}
+div.kartaSlevy{
+    @include kartySlevy;
 }
 div.seznamKaret{
     @include seznamKaret;
-    background-color: $colorFialova;
-    border-style: ridge;
-    border-color: black; 
-    border-width: .25em;
 }
 
-div.vedlejsi{
+div.navAkce{
     background-color: $colorFialova;
     border-style: ridge;
     border-color: black; 
@@ -47,9 +43,9 @@ div.formular{
     border-color: black; 
     border-width: .25em;
     max-width: 30em;
-}
-div.nadpis{
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
 }
 input{
     padding: .25em;
@@ -69,7 +65,12 @@ select{
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
 }
-
+.file{
+    border: 0px;
+}
+.tlacitkoFormulare{
+    @include tlacitkoFormulare;
+}
 @media (max-width: 1381px){
     div.ramecek{
         margin-left: 5em;

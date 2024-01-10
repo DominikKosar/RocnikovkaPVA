@@ -2,7 +2,7 @@ body {
   background-color: rgb(36, 46, 76);
 }
 
-div.hlavni {
+div.hlavniNavbar {
   background-color: rgb(32, 31, 37);
   border-style: ridge;
   border-color: black;
@@ -26,37 +26,36 @@ a:hover {
   color: #CA9CE1;
 }
 
-button.tlacitko {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: larger;
-  background-color: white;
-  border-width: 0.25em;
-}
-
-div.data {
+div.navDataLi {
   border-color: black;
   border-width: 0.25em;
   border-style: ridge;
   margin: 0.3em;
 }
 
-div.karty {
+div.kartaProdukty {
   width: 10em;
   background-color: rgb(36, 46, 76);
   color: white;
 }
 
-div.seznamKaret {
-  border-width: 0.25em;
+div.kartaSlevy {
+  width: 10em;
+  background-color: rgb(36, 46, 76);
+  color: white;
   border-style: ridge;
-  border-color: #89A1EF;
-  background-color: rgba(37, 78, 202, 0.668);
-  border-style: ridge;
-  border-color: black;
+  border-color: goldenrod;
   border-width: 0.25em;
 }
 
-div.vedlejsi {
+div.seznamKaret {
+  border-width: 0.25em;
+  border-style: ridge;
+  background-color: rgba(37, 78, 202, 0.668);
+  border-color: black;
+}
+
+div.navAkce {
   background-color: rgba(37, 78, 202, 0.668);
   border-style: ridge;
   border-color: black;
@@ -69,10 +68,9 @@ div.formular {
   border-color: black;
   border-width: 0.25em;
   max-width: 30em;
-}
-
-div.nadpis {
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
 }
 
 input {
@@ -94,6 +92,21 @@ select {
 .nadpis {
   font-family: Arial, Helvetica, sans-serif;
   font-size: larger;
+}
+
+.file {
+  border: 0px;
+}
+
+.tlacitkoFormulare {
+  border-style: ridge;
+  border-width: 0.25em;
+  border-radius: 0.5em;
+  background-color: rgb(36, 46, 76);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: bold;
 }
 
 @media (max-width: 1381px) {

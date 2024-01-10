@@ -1,8 +1,6 @@
 {% extends "novyZamestnanec.html.twig" %}
 {% block tlacitkoZpet %}
-    <div class="container">
-        <a href="zamestnanci">Zpět</a>
-    </div>
+    <a href="zamestnanci">Zpět</a>
 {% endblock %}
 {% block nadpisForm %}
     Upravit Zaměstnance
@@ -22,7 +20,7 @@
                 <input type="text" placeholder="Příjmení" class="m-1"><br>
                 <input type="text" placeholder="Pozice" class="m-1"><br>
                 <input type="tel" placeholder="Telefon" class="m-2"><br>
-                <button class="px-2 m-2 tlacitko" type="submit" value="white" name="submit">Upravit vybraného Zaměstnance</button>
+                <button class="px-2 m-2 tlacitkoFormulare" type="submit" value="white" name="submit">Upravit vybraného Zaměstnance</button>
             </form>
         </div>
 {% endblock %}

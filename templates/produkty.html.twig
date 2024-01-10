@@ -1,6 +1,6 @@
 {% extends "slevy.html.twig" %}
 {% block body %}
-    <div class="container vedlejsi">
+    <div class="container navAkce">
         <nav class="navbar justify-content-end">
             <form class="px-4 ">
                 <a href="novyProdukt">Nový produkt</a>
@@ -22,7 +22,7 @@
         <div class="ramecek">
             <div class="row mx-4 p-1 align-item-center radka">
             {% for i in Data %}
-                <div class="card p-1 m-2 karty">
+                <div class="card p-1 m-2 kartaProdukty">
                     <img src="{{ asset(i.Obrazek) }}" class="card-img-top p-2">
                     <div class="card-body">
                         <h5 class="card-title">{{ i.Nazev }}</h5>

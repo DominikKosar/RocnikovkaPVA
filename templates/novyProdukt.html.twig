@@ -1,28 +1,26 @@
 {% extends "slevy.html.twig" %}
 {% block body %}
-    {% block tlacitkoZpet %}
-        <div class="container">
+    <div class="container formular">
+        {% block tlacitkoZpet %}
             <a href="produkty">Zpět</a>
-        </div>
-    {% endblock %}
-    <div class="container nadpis">
-        <div class="container formular">
-            <div class="container text-center">
+        {% endblock %}
+        <div class="container text-center">
+            <p class="nadpis">
                 {% block nadpisForm %}
                     Nový produkt
-                {% endblock %}
-            </div>
-            <form class="form">
-                {% block contentForm %}
-                    <div class="container text-center">
-                        <input type="text" placeholder="Název produktu" class="m-1"><br>
-                        <input type="text" placeholder="Popis produktu" class="m-1"><br>
-                        <input type="text" placeholder="Cena" class="m-1"><br>
-                        <input type="file" placeholder="Obr" class="m-2 text-center"><br>
-                        <button class="px-2 m-2 tlacitko" type="submit" value="white" name="submit">Přidat nový produkt</button>
-                    </div>
-                {% endblock %}
-            </form>
+                {% endblock %}  
+            </p>
         </div>
-    </div>    
+        <form>
+            {% block contentForm %}
+                <div class="container text-center">
+                    <input type="text" placeholder="Název produktu" class="m-1"><br>
+                    <input type="text" placeholder="Popis produktu" class="m-1"><br>
+                    <input type="text" placeholder="Cena" class="m-1"><br>
+                    <input type="file" placeholder="Obr" class="m-2 text-center file"><br>
+                    <button class="px-2 m-2 tlacitkoFormulare" type="submit" value="white" name="submit">Přidat nový produkt</button>
+                </div>
+            {% endblock %}
+        </form>
+    </div> 
 {% endblock %}
