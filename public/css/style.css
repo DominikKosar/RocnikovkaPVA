@@ -118,9 +118,6 @@ select {
   div.ramecek {
     margin-left: 3em;
   }
-  div.ved {
-    justify-content: left;
-  }
 }
 @media (max-width: 600px) {
   div.ramecek {
@@ -148,8 +145,5 @@ select {
   }
   div.ramecek {
     margin-left: 0em;
-  }
-  div.tlacit {
-    margin-right: 1em;
   }
 }/*# sourceMappingURL=style.css.map */
